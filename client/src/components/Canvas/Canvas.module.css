@@ -1,0 +1,15 @@
+.canvas {
+  display: none;
+}
+
+.canvasButton {
+  padding: 10px 20px;
+  background-color: #0095f6;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}

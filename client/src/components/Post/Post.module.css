@@ -1,0 +1,68 @@
+.post {
+  margin: 30px 0;
+  border: 1px solid rgb(214, 206, 206);
+}
+
+.image {
+  width: 600px;
+  max-height: 600px;
+}
+.header {
+  width: 600px;
+  height: 50px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.footer {
+  width: 600px;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+.formContainer {
+  height: 50px;
+  width: 600px;
+  border-top: 1px solid rgb(226, 226, 226);
+  display: flex;
+  padding: 10px;
+}
+
+.commentInput {
+  height: 100%;
+  border: none;
+  width: 550px;
+  outline: none;
+}
+.commentButton {
+  border: none;
+  color: #0095f6;
+  font-weight: 700;
+  background-color: none;
+  cursor: pointer;
+}
+
+.moreCommentButton {
+  border: none;
+  color: rgb(112, 111, 111);
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.actionsContainer {
+  padding: 10px;
+}
+
+.comments {
+  padding: 0 10px;
+}
+.likes {
+  padding: 0 10px;
+}
+.commentsContainer {
+  padding: 10px 10px;
+}

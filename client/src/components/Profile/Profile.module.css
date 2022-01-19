@@ -1,0 +1,212 @@
+.postField {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileAvatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profileHeaderContainer {
+  display: flex;
+  padding: 50px 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.profileHeaderInfo {
+  margin: 0 25px;
+}
+
+.nameButtonContainer {
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+}
+
+.profileName {
+  font-size: 20px;
+}
+
+.followButton {
+  background-color: #0095f6;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.flexContainer {
+  display: flex;
+  min-width: 320px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.profileInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoCount {
+  font-weight: 700;
+}
+
+.profileFullName {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.noPostLabel {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.postPreview {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  margin: 10px;
+}
+
+.postPreview:hover .postHoverinfo {
+  display: flex;
+}
+
+.postSmallImage {
+  width: 270px;
+  height: 270px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.postImage {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  object-fit: contain;
+}
+
+.postHoverinfo {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  top: 0px;
+  left: 0px;
+  width: 270px;
+  height: 270px;
+  margin: 10px;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.iconCount {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.postRigth {
+  width: 300px;
+  border: 1px solid gainsboro;
+  padding-left: 10px;
+}
+
+.modalAvatarContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContainer {
+  display: flex;
+  border: 1px solid gainsboro;
+}
+
+.modalHeader {
+  height: 70px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.btnLoadInput {
+  background-color: #0095f6;
+  color: white;
+  padding: 10px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="file"]::file-selector-button {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #0095f6;
+  color: white;
+  cursor: pointer;
+}
+
+.inputPhoto {
+  height: 50px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteAvatar {
+  height: 50px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #ed4956;
+  cursor: pointer;
+}
+
+.cancelModal {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.comment {
+  margin: 15px 5px;
+  overflow-wrap: break-word;
+}
+
+.commentName {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.personalComment {
+  display: flex;
+  align-items: center;
+}
+
+.textComment {
+  margin-left: 15px;
+}

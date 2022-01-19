@@ -1,0 +1,14 @@
+.skeleton {
+  margin: 30px 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.noPostText {
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  color: gray;
+}

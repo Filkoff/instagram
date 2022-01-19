@@ -1,0 +1,130 @@
+.modalPhoto {
+  min-height: 530px;
+  min-width: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  transition: all 1s ease;
+}
+
+.loadImage {
+  margin: 30px;
+  max-width: 450px;
+  max-height: 500px;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagePreviev {
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+  display: flex;
+  flex: 1;
+}
+
+.labelButton {
+  background-color: #0095f6;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.canvas {
+  visibility: hidden;
+}
+
+.authButton {
+  background-color: #0095f6;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.allFilters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.editPhotoContainer {
+  display: flex;
+}
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigateButton {
+  cursor: pointer;
+  color: #0095f6;
+  font-weight: 700;
+}
+
+.singleSlider {
+  position: relative;
+}
+
+.slidersContainer {
+  margin: 10px;
+}
+
+.resetButton {
+  color: #0095f6;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.filtersNavigation {
+  display: flex;
+  justify-content: center;
+}
+
+.filtersOption {
+  padding: 10px 30px;
+  cursor: pointer;
+  color: grey;
+}
+
+.filtersOptionActive {
+  color: #0095f6;
+  font-weight: 700;
+}
+
+.filtersOption:hover {
+  color: #0095f6;
+  transition: all 0.3s ease;
+}
+
+.captionContainer {
+  margin-left: 10px;
+}
+
+.textarea {
+  height: 300px;
+  width: 300px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}

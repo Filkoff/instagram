@@ -1,0 +1,18 @@
+.filterIcon {
+  width: 88px;
+  height: 88px;
+  cursor: pointer;
+}
+
+.filtersPreview {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.filterContainer {
+  margin: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: grey;
+}
