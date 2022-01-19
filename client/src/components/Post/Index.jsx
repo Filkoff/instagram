@@ -4,7 +4,7 @@ import Image from "./Image";
 import Actions from "./Actions";
 import Footer from "./Footer";
 import Comments from "./Comments";
-import styles from "./Post.module.css";
+import styles from "./Post.module.scss";
 
 export default function Post({ data, userId, currentUserName }) {
   const commentInput = useRef(null);

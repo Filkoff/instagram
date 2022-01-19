@@ -50,7 +50,6 @@ export class AuthService {
     const userData = this.jwtService.verify(token);
     const user = await this.userService.getUserByEmail(userData.email);
     console.log(user);
-
     return user;
   }
 

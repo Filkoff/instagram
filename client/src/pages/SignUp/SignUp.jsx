@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import Button from "../components/styled-components/Button";
-import Input from "../components/styled-components/Input";
-import * as ROUTES from "../constants/routes";
-import { registration } from "../actions/user";
-import styles from "./SignUp.module.css";
-import Flex from "../components/styled-components/Flex";
+import Button from "../../components/styled-components/Button";
+import Input from "../../components/styled-components/Input";
+import * as ROUTES from "../../constants/routes";
+import { registration } from "../../actions/user";
+import styles from "./SignUp.module.scss";
+import Flex from "../../components/styled-components/Flex";
+import ErrorMessage from "../../components/styled-components/ErrorMessage";
 
 export default function SignUp() {
   const history = useHistory();
@@ -18,22 +19,13 @@ export default function SignUp() {
 
   const handleSignUp = async (event) => {
     event.preventDefault();
-    const usernameExists = false;
-
-    if (!usernameExists) {
-      try {
-        registration(name, surname, email, password);
-        history.push(ROUTES.LOGIN);
-      } catch (error) {
-        setName("");
-        setSurname("");
-        setEmail("");
-        setPassword("");
-        setError(error.message);
-      }
+    const response = await registration(name, surname, email, password);
+    if (response.success) {
+      history.push(ROUTES.LOGIN);
+    } else if (!name || !surname || !password || !email) {
+      setError("Inputs can't be empty");
     } else {
-      setName("");
-      setError("That username is already taken, please try another.");
+      setError(response.data);
     }
   };
 
@@ -46,13 +38,13 @@ export default function SignUp() {
           alt="Phone"
         />
       </div>
-      <Flex direction="column" align="center">
+      <Flex direction="column">
         <div>
           <h1>
             <img src="/images/logo.png" alt="Instagram" />
           </h1>
 
-          {error && <p>{error}</p>}
+          {error && <ErrorMessage>{error}</ErrorMessage>}
 
           <form onSubmit={handleSignUp} method="POST">
             <div>

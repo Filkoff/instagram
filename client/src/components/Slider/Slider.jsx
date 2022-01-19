@@ -1,5 +1,5 @@
 import { Slider } from "@mui/material";
-import styles from "./Slider.module.css";
+import styles from "./Slider.module.scss";
 
 function MySlider({ min, max, value, handleChange, name }) {
   return (

@@ -3,11 +3,11 @@ import * as ROUTES from "../../constants/routes";
 import { BASE_URL, DEFAULT_IMAGE_PATH } from "../../constants/paths";
 import { useDispatch, useSelector } from "react-redux";
 import Flex from "../styled-components/Flex";
-import styles from "./Header.module.css";
 import { logOut } from "../../reducers/userReducer";
 import { useState } from "react";
 import Search from "../Search/Search";
 import ImageEditModal from "../ImageEditModal/ImageEditModal";
+import styles from "./Header.module.scss";
 
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);

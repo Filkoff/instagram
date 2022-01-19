@@ -1,7 +1,9 @@
+@import "../../styles/colors";
+
 .modal {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(3, 1, 1, 0.6);
+  background-color: $bg-transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +27,7 @@
   border-radius: 12px;
   transform: scale(0.5);
   transition: 0.4s all;
-  background-color: rgb(255, 255, 255);
+  background-color: $white;
 }
 .content.active {
   transform: scale(1);

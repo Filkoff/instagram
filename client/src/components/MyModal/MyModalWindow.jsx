@@ -1,6 +1,6 @@
 import React from "react";
 import { bool, func, node } from "prop-types";
-import styles from "./MyModalWindow.module.css";
+import styles from "./MyModalWindow.module.scss";
 
 function MyModalWindow({ show, setShow, children }) {
   return (

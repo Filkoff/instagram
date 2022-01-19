@@ -1,4 +1,4 @@
-import styles from "./Post.module.css";
+import styles from "./Post.module.scss";
 
 export default function Footer({ caption, username }) {
   return (

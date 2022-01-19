@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Avatar from "../styled-components/Avatar";
 import Flex from "../styled-components/Flex";
-import styles from "./Post.module.css";
+import styles from "./Post.module.scss";
 
 export default function Header({ userName }) {
   return (

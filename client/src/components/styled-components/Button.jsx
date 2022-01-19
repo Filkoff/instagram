@@ -1,4 +1,5 @@
 import React from "react";
+// import "../../styles/colors";
 import styled from "styled-components";
 
 const StyledButton = styled.button`

@@ -5,7 +5,7 @@ import { setFollowedUsers } from "../../actions/user";
 import Post from "../Post/Index";
 import "react-loading-skeleton/dist/skeleton.css";
 import shortid from "shortid";
-import styles from "./Timeline.module.css";
+import styles from "./Timeline.module.scss";
 
 export default function Timeline() {
   const user = useSelector((state) => state.user);

@@ -1,4 +1,4 @@
-import styles from "./Filters.module.css";
+import styles from "./Filters.module.scss";
 
 function Filters({ setOptions }) {
   return (

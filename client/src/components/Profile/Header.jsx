@@ -4,7 +4,7 @@ import { BASE_URL, DEFAULT_IMAGE_PATH } from "../../constants/paths";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteAvatar, followUser, uploadAvatar } from "../../actions/user";
 import MyModalWindow from "../MyModal/MyModalWindow";
-import styles from "./Profile.module.css";
+import styles from "./Profile.module.scss";
 
 export default function Header({ photosCount, profile }) {
   const dispatch = useDispatch();

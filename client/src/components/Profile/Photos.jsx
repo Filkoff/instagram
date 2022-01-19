@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BASE_URL } from "../../constants/paths";
 import MyModalWindow from "../MyModal/MyModalWindow";
 import User from "../Sidebar/User";
-import styles from "./Profile.module.css";
+import styles from "./Profile.module.scss";
 
 export default function Photos({ photos, user }) {
   const [isModalOpen, setIsModalOpen] = useState(false);

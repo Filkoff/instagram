@@ -4,7 +4,7 @@ import Skeleton from "react-loading-skeleton";
 import Suggestions from "./Suggestions";
 import { useDispatch, useSelector } from "react-redux";
 import { getRecommendedUsers } from "../../actions/user";
-import styles from "./Sidebar.module.css";
+import styles from "./Sidebar.module.scss";
 
 export default function Sidebar() {
   const dispatch = useDispatch();

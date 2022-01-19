@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { useHistory, Link } from "react-router-dom";
-import { login, setFollowedUsers } from "../actions/user";
-import Button from "../components/styled-components/Button";
-import ErrorMessage from "../components/styled-components/ErrorMessage";
-import Flex from "../components/styled-components/Flex";
-import Input from "../components/styled-components/Input";
-import * as ROUTES from "../constants/routes";
-import { setUser } from "../reducers/userReducer";
-import styles from "./Login.module.css";
+import { login, setFollowedUsers } from "../../actions/user";
+import Button from "../../components/styled-components/Button";
+import ErrorMessage from "../../components/styled-components/ErrorMessage";
+import Flex from "../../components/styled-components/Flex";
+import Input from "../../components/styled-components/Input";
+import * as ROUTES from "../../constants/routes";
+import { setUser } from "../../reducers/userReducer";
+import styles from "./Login.module.scss";
 
 function Login() {
   const history = useHistory();
@@ -27,7 +27,7 @@ function Login() {
       dispatch(setFollowedUsers(user.currentUser._id));
       history.push(ROUTES.DASHBOARD);
     } else {
-      response.then((message) => setError(message.data));
+      setError(response.data);
     }
   };
 

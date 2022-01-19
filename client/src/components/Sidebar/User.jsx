@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import { BASE_URL, DEFAULT_IMAGE_PATH } from "../../constants/paths";
-import styles from "./Sidebar.module.css";
+import styles from "./Sidebar.module.scss";
 
 export default function User({ user }) {
   return !user.name || !user.surname ? (

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import MyModalWindow from "../MyModal/MyModalWindow";
 import DEFAULT_OPTIONS from "../../utils/filtersOtions";
-import styles from "./ImageEditModal.module.css";
 import { useEffect } from "react";
 import MySlider from "../Slider/Slider";
 import Filters from "../Filters/Filters";
 import User from "../Sidebar/User";
 import Canvas from "../Canvas/Canvas";
+import styles from "./ImageEditModal.module.scss";
 
 function ImageEditModal({ isModalOpen, setIsModalOpen, user }) {
   const [caption, setCaption] = useState("");

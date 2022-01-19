@@ -1,5 +1,5 @@
 import { BASE_URL } from "../../constants/paths";
-import styles from "./Post.module.css";
+import styles from "./Post.module.scss";
 
 export default function Image({ src, caption }) {
   return (

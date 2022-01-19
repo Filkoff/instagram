@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { addPost } from "../../actions/post";
-import styles from "./Canvas.module.css";
+import styles from "./Canvas.module.scss";
 
 const Canvas = ({
   image,

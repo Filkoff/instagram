@@ -11,8 +11,9 @@ export const registration = async (name, surname, email, password) => {
       email,
       password,
     });
+    return { success: true };
   } catch (e) {
-    alert(e.response.data.message);
+    return { success: false, data: e.response.data.message };
   }
 };
 

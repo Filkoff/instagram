@@ -2,7 +2,7 @@ import { useState } from "react";
 import { searchUser } from "../../actions/user";
 import User from "../Sidebar/User";
 import shortid from "shortid";
-import styles from "./Search.module.css";
+import styles from "./Search.module.scss";
 
 function Search() {
   const [searchQuery, setSearchQuery] = useState("");

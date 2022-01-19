@@ -1,11 +1,11 @@
 import { useParams, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
-import * as ROUTES from "../constants/routes";
-import UserProfile from "../components/Profile/Index";
-import Header from "../components/Header/Header";
-import { checkUser } from "../actions/user";
+import * as ROUTES from "../../constants/routes";
+import UserProfile from "../../components/Profile/Index";
+import Header from "../../components/Header/Header";
+import { checkUser } from "../../actions/user";
 import { useDispatch } from "react-redux";
-import { setVisitedUser } from "../reducers/userReducer";
+import { setVisitedUser } from "../../reducers/userReducer";
 
 export default function Profile() {
   const { username } = useParams();

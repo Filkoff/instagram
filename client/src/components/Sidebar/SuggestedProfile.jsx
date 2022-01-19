@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { followUser } from "../../actions/user";
-import styles from "./Sidebar.module.css";
 import Flex from "../styled-components/Flex";
 import Avatar from "../styled-components/Avatar";
 import { BASE_URL } from "../../constants/paths";
+import styles from "./Sidebar.module.scss";
 
 export default function SuggestedProfile({
   username,

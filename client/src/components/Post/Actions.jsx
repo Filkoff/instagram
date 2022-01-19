@@ -1,6 +1,6 @@
 import { useState } from "react";
-import styles from "./Post.module.css";
 import { like } from "../../actions/post";
+import styles from "./Post.module.scss";
 
 export default function Actions({
   totalLikes,

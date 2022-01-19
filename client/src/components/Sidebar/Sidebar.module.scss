@@ -1,5 +1,7 @@
+@import "../../styles/colors";
+
 a {
-  color: rgb(24, 23, 23);
+  color: $black;
   text-decoration: none;
   font-weight: 700;
 }
@@ -12,7 +14,7 @@ a:hover {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 1px solid gainsboro;
+  border: 1px solid $border-gray;
   margin-right: 10px;
 }
 
@@ -41,10 +43,10 @@ a:hover {
 
 .commentButton {
   border: none;
-  color: #0095f6;
+  color: $main-blue;
   font-weight: 700;
   background-color: none;
   cursor: pointer;
-  background-color: white;
+  background-color: $white;
   font-size: 12px;
 }

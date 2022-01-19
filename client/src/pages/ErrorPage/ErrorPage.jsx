@@ -1,5 +1,5 @@
-import Header from "../components/Header/Header";
-import styles from "./ErrorPage.module.css";
+import Header from "../../components/Header/Header";
+import styles from "./ErrorPage.module.scss";
 
 export default function NotFound() {
   return (

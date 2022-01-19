@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { addComment } from "../../actions/post";
-import styles from "./Post.module.css";
+import styles from "./Post.module.scss";
 
 export default function AddComment({
   comments,

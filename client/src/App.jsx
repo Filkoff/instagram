@@ -5,11 +5,11 @@ import styled from "styled-components";
 import { useDispatch } from "react-redux";
 import { auth } from "./actions/user";
 
-const Login = lazy(() => import("./pages/Login"));
-const SignUp = lazy(() => import("./pages/SignUp"));
-const Profile = lazy(() => import("./pages/Profile"));
-const Dashboard = lazy(() => import("./pages/Dashboard"));
-const NotFound = lazy(() => import("./pages/ErrorPage"));
+const Login = lazy(() => import("./pages/Login/Login"));
+const SignUp = lazy(() => import("./pages/SignUp/SignUp"));
+const Profile = lazy(() => import("./pages/Profile/Profile"));
+const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard"));
+const NotFound = lazy(() => import("./pages/ErrorPage/ErrorPage"));
 const AppContainer = styled.div`
 width: 100%;
 min-height: 100vh;

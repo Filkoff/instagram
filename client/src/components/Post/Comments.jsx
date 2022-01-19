@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import AddComment from "./Add-comment";
 import shortid from "shortid";
-import styles from "./Post.module.css";
+import styles from "./Post.module.scss";
 
 export default function Comments({
   userId,

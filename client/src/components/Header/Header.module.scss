@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .headerContainer {
   position: relative;
 }
@@ -9,7 +11,7 @@
 .icons {
   width: 25px;
   height: 25px;
-  color: black;
+  color: $black;
   margin: 0 5px;
 }
 
@@ -54,9 +56,9 @@
 }
 
 .labelButton {
-  background-color: #0095f6;
+  background-color: $main-blue;
   padding: 10px;
-  color: white;
+  color: $white;
   font-weight: 700;
   border-radius: 5px;
   border: none;
@@ -72,9 +74,9 @@
 }
 
 .authButton {
-  background-color: #0095f6;
+  background-color: $main-blue;
   padding: 10px;
-  color: white;
+  color: $white;
   font-weight: 700;
   border-radius: 5px;
   border: none;
@@ -101,7 +103,7 @@
 
 .navigateButton {
   cursor: pointer;
-  color: #0095f6;
+  color: $main-blue;
   font-weight: 700;
 }
 
@@ -114,7 +116,7 @@
 }
 
 .resetButton {
-  color: #0095f6;
+  color: $main-blue;
   position: absolute;
   right: 0;
   cursor: pointer;
@@ -128,16 +130,16 @@
 .filtersOption {
   padding: 10px 30px;
   cursor: pointer;
-  color: grey;
+  color: $medium-gray;
 }
 
 .filtersOptionActive {
-  color: #0095f6;
+  color: $main-blue;
   font-weight: 700;
 }
 
 .filtersOption:hover {
-  color: #0095f6;
+  color: $main-blue;
   transition: all 0.3s ease;
 }
 

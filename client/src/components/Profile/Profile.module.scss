@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .postField {
   display: flex;
   flex-wrap: wrap;
@@ -14,7 +16,7 @@
 .profileHeaderContainer {
   display: flex;
   padding: 50px 20px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid $border-gray;
 }
 
 .profileHeaderInfo {
@@ -32,11 +34,11 @@
 }
 
 .followButton {
-  background-color: #0095f6;
+  background-color: $main-blue;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: $white;
   margin: 0 10px;
   cursor: pointer;
 }
@@ -104,24 +106,24 @@
   height: 270px;
   margin: 10px;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $bg-transparent-light;
 }
 
 .icon {
-  color: white;
+  color: $white;
   width: 25px;
   height: 25px;
 }
 
 .iconCount {
-  color: white;
+  color: $white;
   font-size: 20px;
   margin: 0 10px;
 }
 
 .postRigth {
   width: 300px;
-  border: 1px solid gainsboro;
+  border: 1px solid $border-gray;
   padding-left: 10px;
 }
 
@@ -133,12 +135,12 @@
 
 .modalContainer {
   display: flex;
-  border: 1px solid gainsboro;
+  border: 1px solid $border-gray;
 }
 
 .modalHeader {
   height: 70px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $medium-gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,8 +148,8 @@
 }
 
 .btnLoadInput {
-  background-color: #0095f6;
-  color: white;
+  background-color: $main-blue;
+  color: $white;
   padding: 10px;
   font-family: sans-serif;
   border-radius: 5px;
@@ -160,14 +162,14 @@ input[type="file"]::file-selector-button {
   border: none;
   font-size: 16px;
   font-weight: 700;
-  background-color: #0095f6;
-  color: white;
+  background-color: $main-blue;
+  color: $white;
   cursor: pointer;
 }
 
 .inputPhoto {
   height: 50px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $medium-gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,12 +177,12 @@ input[type="file"]::file-selector-button {
 
 .deleteAvatar {
   height: 50px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $medium-gray;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  color: #ed4956;
+  color: $red;
   cursor: pointer;
 }
 

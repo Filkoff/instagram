@@ -1,7 +1,9 @@
+@import "../../styles/colors";
+
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: gainsboro;
+  background-color: $border-gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,5 +12,5 @@
 .status {
   font-size: 25px;
   font-weight: 700;
-  color: grey;
+  color: $medium-gray;
 }
